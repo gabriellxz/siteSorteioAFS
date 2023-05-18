@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorteio AFS</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/NEWAFSLOGO.png" alt="logo AFS">
+        </div>
+        <div class="buttonTema">
+            <input type="button" value="modo escuro" class="buttoncolor" id="escuro">
+            <input type="button" value="modo claro" class="buttoncolor" id="claro">
+        </div>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="inputComida">
+                <h1>Comida desperdiçada</h1>
+                <ul>
+                    <li class="turmasComida">
+                        1º Administração <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        1º Desenvolvimento de sistemas <input type="number" name="kg" class="kg"
+                            placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        1º Informática <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        1º Enfermagem <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        2º Administração <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        2º Desenvolvimento de sistemas <input type="number" name="kg" class="kg"
+                            placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        2º Informática <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        2º Enfermagem <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        3º Administração <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        3º Informática <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        3º Enfermagem <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                    <li class="turmasComida">
+                        3º Comércio <input type="number" name="kg" class="kg" placeholder="comida desperdiçada">
+                    </li>
+                </ul>
+                <button id="sortear">Sortear</button>
+
+                <p id="aviso">
+                    Se nenhuma turma desperdiçou comida, apenas aperte o botão de sortear.
+                </p>
+
+                <div class="msg"></div>
+            </div>
+        </section>
+
+        <div id="box-ranking">
+            <div id="box-child">
+                <div id="ranking" class="box-content">
+                    <h1>Ranking de turmas</h1>
+                    <ol id="list-ranking"></ol>
+
+                    <p>
+                        Sorteio feito com sucesso. As turmas sairão nessa sequência para <strong>merenda e
+                            almoço</strong>
+                        durante toda semana.
+                    </p>
+
+                    <div id="buttons">
+                        <button>Salvar sorteio</button>
+                        <button>Excluir sorteio</button>
+                        <button>Outro sorteio</button>
+                    </div>
+                </div>
+
+                <div id="turmasKg" class="box-content">
+                    <h1>Turmas em último</h1>
+
+                    <ul class="turmasUltima"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
